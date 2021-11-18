@@ -9,7 +9,8 @@ jobs:
     - name: just do ls
       id: proc1
       run: |
+          pwd
           echo "before ls"
-          ls
+          ls /root/
           echo "after ls"
 
