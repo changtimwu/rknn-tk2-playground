@@ -17,4 +17,4 @@ jobs:
        env
        pwd
        ls -al
-       ls /root/rknn-toolkit2/examples
+       ls /root/
