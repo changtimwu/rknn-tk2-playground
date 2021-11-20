@@ -16,5 +16,6 @@ jobs:
        echo "The CPU info was ${{ steps.hello.outputs.cpuinfo }}"
        env
        pwd
+       whoami
        ls -al
        ls /root/
