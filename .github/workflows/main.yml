@@ -16,4 +16,5 @@ jobs:
        echo "The CPU info was ${{ steps.hello.outputs.cpuinfo }}"
        env
        pwd
-
+       ls -al
+       ls /root/rknn-toolkit2/examples
