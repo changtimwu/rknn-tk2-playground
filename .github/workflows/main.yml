@@ -7,7 +7,7 @@ jobs:
     steps:
     - name: try my docker action
       id: hello
-      uses: actions/hello-dkaction
+      uses: changtimwu/hello-dkaction
       with:
         who-to-greet: 'King Mary'
     - name: Get the output
