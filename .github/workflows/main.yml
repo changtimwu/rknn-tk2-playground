@@ -8,18 +8,11 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2 
     - name: try my docker action
-      id: hello
-      uses: changtimwu/hello-dkaction@v5
+      id: rknntk
+      uses: changtimwu/hello-dkaction@v6
       with:
-        who-to-greet: 'King Mary'
+        wkdir: 'mynet' 
     - name: Get the output
       run: |
-       echo "The time was ${{ steps.hello.outputs.time }}"
-       echo "The CPU info was ${{ steps.hello.outputs.cpuinfo }}"
-       env
-       whoami
-       echo "GITHUB_WORKSPACE=$GITHUB_WORKSPACE"
-       ls $GITHUB_WORKSPACE
-       echo "GITHUB_PATH=$GITHUB_PATH"
-       ls $GITHUB_PATH
- 
+       echo "The time was ${{ steps.rknntk.outputs.time }}"
+       echo "The CPU info was ${{ steps.rknntk.outputs.cpuinfo }}"
