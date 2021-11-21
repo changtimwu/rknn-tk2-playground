@@ -15,7 +15,11 @@ jobs:
        echo "The time was ${{ steps.hello.outputs.time }}"
        echo "The CPU info was ${{ steps.hello.outputs.cpuinfo }}"
        env
-       pwd
        whoami
        ls -al
-       ls /root/
+       pwd
+       echo "GITHUB_WORKSPACE=$GITHUB_WORKSPACE"
+       ls $GITHUB_WORKSPACE
+       echo "GITHUB_PATH=$GITHUB_PATH"
+       ls $GITHUB_PATH
+ 
