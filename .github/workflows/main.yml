@@ -7,11 +7,17 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2 
-    - name: try my docker action
+    - name: launch the RKNN toolkit2 action
       id: rknntk
       uses: changtimwu/hello-dkaction@v6
       with:
         wkdir: 'mynet'
+    - name: Archive RKNN artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: rknn-model
+        path: |
+          mynet/*.rknn
     - name: Get the output
       run: |
        echo "GITHUB_WORKSPACE=$GITHUB_WORKSPACE"
